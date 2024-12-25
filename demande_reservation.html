@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Réserver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Landed</a></h1>
+						<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="chambres.html">Chambres</a></li>
+							<li><a href="exterieurs.html">Extérieurs</a></li>
+							<li><a href="alentours.html">Autour du gîte</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="demande_reservation.html">Réserver</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Demande de réservation</h2>
+							<p>Veuillez remplir le formulaire ci-dessous, nous reviendrons vers vous par mail pour vous communiquer les modalités.</p>
+						</header>
+
+						<section>
+							<!--h3>Demande de réservation</h3>
+							<p>Nous reviendrons vers vous par mail pour vous communiquer les modalités, ...</p-->
+							<form method="post" id="reservation_from" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdweSKUnDL0v8_Xw3RLN4cYw_ik1pDd3U71GbEy6GI_ptChzw/formResponse">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="entry.1048796954" id="name" value="" placeholder="Nom" required/>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="entry.1661449210" id="email" value="" placeholder="Email" required/>
+									</div>
+									<div class="col-6 col-12-medium">
+										<fieldset>
+											<legend>Configuration de la première chambre</legend>
+											<div>
+												<input type="radio" id="chambre1_80" name="chambe1_config" value="2x80" checked>
+												<label for="chambre1_80">Deux lits de 80cm</label>
+											</div>
+											<div>
+												<input type="radio" id="chambre1_160" name="chambe1_config" value="160">
+												<label for="chambre1_160">Un lit de 160cm</label>
+											</div>
+										</fieldset>
+									</div>
+									<div class="col-6 col-12-medium">
+										<fieldset>
+											<legend>Configuration de la deuxième chambre</legend>
+											<div>
+												<input type="radio" id="chambre2_80" name="chambe2_config" value="2x80" checked>
+												<label for="chambre2_80">Deux lits de 80cm</label>
+											</div>
+											<div>
+												<input type="radio" id="chambre2_160" name="chambe2_config" value="160">
+												<label for="chambre2_160">Un lit de 160cm</label>
+											</div>
+										</fieldset>
+									</div>
+
+									<div class="col-6 col-12-medium">
+										<h3>Date d'arrivée</h3>
+										<input type="date">
+									</div>
+									<div class="col-6 col-12-medium">
+										<h3>Date de départ</h3>
+										<!--input type="date" name="dates"-->
+										<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+									</div>
+
+
+
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Envoyer" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<header>
+							<h2>Contact</h2>
+							<ul class="alt">
+								<li>sechoirdelouradour@gmail.com</li>
+								<li>310 Route de Tulle<br/>19120, La Chapelle Aux Saints</li>
+							</ul>
+						</header>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/reservations.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	</body>
+</html>
