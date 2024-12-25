@@ -23,6 +23,11 @@
 		xsmall:   ( null,    480px  ),
 	));
 
+
+
+@import 'components/gallery';
+
+
 // Mixins.
 
 	@mixin line-icon($bg: _palette(bg), $fg: _palette(fg-bold)) {
