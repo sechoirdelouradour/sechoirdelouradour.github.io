@@ -1,13 +1,21 @@
 let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdweSKUnDL0v8_Xw3RLN4cYw_ik1pDd3U71GbEy6GI_ptChzw/formResponse"; //action url
 let form = document.querySelector("#reservation_from"); //form element
 
+
+//daterange picker
 $(function() {
   $('input[name="daterange"]').daterangepicker({
-    opens: 'left'
+    opens: 'left',
+    locale: {
+      format: 'DD/MM/YYYY'
+    }
   }, function(start, end, label) {
     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
 });
+
+
+
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();//prevent default behaviour
@@ -34,7 +42,9 @@ function getInputData(){
     //fill name attributes to corresponding values
     dataToPost.append("entry.1048796954", document.querySelector("#name").value);
     dataToPost.append("entry.1661449210", document.querySelector("#email").value);
+    dataToPost.append("entry.65285345", document.querySelector("#daterange").value);
     dataToPost.append("entry.1958767559", document.querySelector('input[name=chambe1_config]:checked').value);
+    dataToPost.append("entry.700871621", document.querySelector('input[name=chambe2_config]:checked').value);
 
     return dataToPost;
 }
