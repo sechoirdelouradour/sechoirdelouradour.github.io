@@ -1,3 +1,5 @@
+
+/*
 let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdweSKUnDL0v8_Xw3RLN4cYw_ik1pDd3U71GbEy6GI_ptChzw/formResponse"; //action url
 let form = document.querySelector("#reservation_from"); //form element
 
@@ -49,4 +51,5 @@ function getInputData(){
     return dataToPost;
 }
 
+*/
 
