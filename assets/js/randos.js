@@ -51,7 +51,18 @@ window.addEventListener("DOMContentLoaded", function () {
 
   var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
-  L.marker([44.984011, 1.715208]).addTo(map);
+  var homeIcon = L.icon({
+    iconUrl: 'randos/home.svg',
+    //shadowUrl: 'randos/shadow.svg',
+    iconSize:     [30, 45], // size of the icon
+    //shadowSize:   [30, 34], // size of the shadow
+    iconAnchor:   [15, 45], // point of the icon which will correspond to marker's location
+    //shadowAnchor: [4, 34],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var home_marker = L.marker([44.984011, 1.715208], {icon: homeIcon}).addTo(map);
+  home_marker.bindTooltip("Gîte");
 
   const options = {
       async: true,
