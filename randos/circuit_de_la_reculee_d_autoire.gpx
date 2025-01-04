@@ -3,7 +3,7 @@
     xmlns="http://www.topografix.com/GPX/1/1" 
     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" 
     creator="Openrunner - https://www.openrunner.com" >	<trk>
-						<name>1 - 220227-VD17-circuit-de-la-reculee-d-autoire-AU-20448465</name>
+						<name>Circuit de la reculee d'Autoire</name>
 						<trkseg>
 					<trkpt lat="44.853610" lon="1.820710">
 						<ele>190</ele>
