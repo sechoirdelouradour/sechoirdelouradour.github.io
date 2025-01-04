@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Le Séchoir de Louradour</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.1.0/gpx.min.js" defer></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#map {
+				width: 800px;
+				height: 500px;
+			}
+
+			.leaflet-control-layers-base input {
+				all: revert;
+			}
+			
+			.leaflet-control-layers-overlays input {
+				all: revert;
+			}
+
+			.leaflet-control-layers-base label {
+				color: black;
+			}
+
+			.leaflet-control-layers-overlays label {
+				color: black;
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Le Séchoir de Louradour</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="chambres.html">Chambres</a></li>
+							<li><a href="exterieurs.html">Extérieurs</a></li>
+							<li><a href="alentours.html">Autour du gîte</a></li>
+							<li><a href="demande_reservation.html" class="button primary">Réserver</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Nos randonnées</h2>
+							<p>Nos jolies randos.</p>
+						</header>
+
+
+						<section class="mama">
+							<div id="map"></div>
+						</section>
+
+						<!--section>
+							<iframe width="100%" height="650" loading="lazy" src="https://www.openrunner.com/embed/73655366524e67485770563245705576417566476466696d41357969645441346c465430622b546c5047773d3a3a0071358b999da41cdc6bfd1c369e5620?unit=metric" style="border: none;"></iframe>
+						</section-->
+
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+					<div class="row gtr-uniform gtr-50">
+						<div class="col-6 col-12-medium">
+							<h2>Contact</h2>
+							<ul class="alt">
+								<li>sechoirdelouradour@gmail.com</li>
+								<li>310 Route de Tulle<br/>19120, La Chapelle Aux Saints</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium">
+							<span class="image round"><img src="images/hotes.webp" alt="" /></span>
+						</div>
+					</div>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/randos.js" type="module"></script>
+	</body>
+</html>
