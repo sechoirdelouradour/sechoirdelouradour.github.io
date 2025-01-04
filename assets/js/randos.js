@@ -5,6 +5,10 @@ const randos = [
   './randos/circuit_de_la_reculee_d_autoire.gpx'
 ];
 
+const velo = [
+  './randos/vegenne_curemonte.gpx'
+];
+
 var GPX = [];
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -65,8 +69,13 @@ window.addEventListener("DOMContentLoaded", function () {
   home_marker.bindTooltip("Gîte");
 
   const options = {
-      async: true,
-      polyline_options: { color: 'red' },
+    async: true,
+    polyline_options: { color: 'red' },
+  };
+
+  const options_velo = {
+    async: true,
+    polyline_options: { color: 'green' },
   };
 
   for (const url of randos) {
@@ -75,13 +84,14 @@ window.addEventListener("DOMContentLoaded", function () {
       e.target.bindTooltip(e.target.get_name());
       layerControl.addOverlay(e.target, e.target.get_name());
     }).addTo(map);
+  }
 
-    gpx.on('loaded', (e)=> {
-      console.log("yo!");
-    })
-
-    GPX.push(gpx);
-
+  for (const url of velo) {
+    const gpx = new L.GPX(url, options_velo).on('loaded', (e) => {
+      //map.fitBounds(e.target.getBounds());
+      e.target.bindTooltip(e.target.get_name());
+      layerControl.addOverlay(e.target, e.target.get_name());
+    }).addTo(map);
   }
 
   map.fitBounds([
